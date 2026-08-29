@@ -9,6 +9,7 @@
      igual à sintaxe clássica, sem precisar de import/module -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -142,16 +143,7 @@
   // ======================================================
   // 1. COLE AQUI O firebaseConfig DO SEU PROJETO
   // ======================================================
- const firebaseConfig = {
-  apiKey: "AIzaSyDLpFXFhxKY9mTytE7lzCk94kxNFKGEzok",
-  authDomain: "desenvolvimento-hibrido-uva.firebaseapp.com",
-  projectId: "desenvolvimento-hibrido-uva",
-  storageBucket: "desenvolvimento-hibrido-uva.firebasestorage.app",
-  messagingSenderId: "975475039215",
-  appId: "1:975475039215:web:e63c6af1aa279abc44741a",
-  measurementId: "G-34GQXDH5ZS"
-};
-
+ 
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
 
